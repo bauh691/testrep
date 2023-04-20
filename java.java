@@ -62,3 +62,9 @@ public class MatrixSorting {
         for (double[] row : matrix) {
             for (double element : row) {
                 System.out.print(element
+
+                                     // Helper method for printing matrix
+    public static void printMatrixTwo(double[][] matrix) {
+        for (double[] row : matrix) {
+            for (double element : row) {
+                System.out.print(element
