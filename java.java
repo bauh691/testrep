@@ -40,3 +40,25 @@ public class MatrixSorting {
             }
         }
     }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        double[][] matrix = {{3.2, 1.0, 2.5}, {2.8, 1.5, 0.9}, {0.8, 2.7, 1.3}};
+        System.out.println("Original matrix:");
+        printMatrix(matrix);
+        sortByRow(matrix);
+        System.out.println("Sorted by row:");
+        printMatrix(matrix);
+        sortByColumn(matrix);
+        System.out.println("Sorted by column:");
+        printMatrix(matrix);
+        sortByElement(matrix);
+        System.out.println("Sorted by element:");
+        printMatrix(matrix);
+    }
+    
+    // Helper method for printing matrix
+    public static void printMatrix(double[][] matrix) {
+        for (double[] row : matrix) {
+            for (double element : row) {
+                System.out.print(element
